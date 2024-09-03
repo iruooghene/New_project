@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Hello {
-    @GetMapping("/v1/newProject")
+    @GetMapping("/newProject")
     public String hi(){
         return "i am connected";
     }
