@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Hello {
     @GetMapping("/newProject")
     public String hi(){
-        return "i am connected";
+        return "i am connected!!!!!";
     }
 
 
