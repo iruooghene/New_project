@@ -50,11 +50,11 @@ jobs:
           
           ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@$EC2_PUBLIC_IP << 'EOF'
           
-            docker pull vi108/newproject:latest
+            sudo docker pull vi108/newproject:latest
 
-            docker stop my_container || true
-            docker rm my_container || true
+            sudo docker stop my_container || true
+            sudo docker rm my_container || true
 
             
-            docker run -d --name my_container -p 80:80 vi108/newproject:latest
+            sudo docker run -d --name my_container -p 80:80 vi108/newproject:latest
           EOF
