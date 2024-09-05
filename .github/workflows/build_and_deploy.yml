@@ -56,5 +56,5 @@ jobs:
             sudo docker rm my_container || true
 
             
-            sudo docker run -d --name my_container -p 8383:8383 vi108/newproject:latest
+            sudo docker run -d --name my_container -p 8383:8080 vi108/newproject:latest
           EOF
